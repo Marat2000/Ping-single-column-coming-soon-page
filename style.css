@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+#errortext
+{
+	display: none;
+	color:  hsl(354, 100%, 66%);
+	font-size: 1rem;
+	font-style: italic;
+}
+
+html
+{
+	font-size: 20px;
+	font-family: 'Libre Franklin', sans-serif;
+}
+
+
+main
+{
+	display: grid;
+	place-items:center; 
+	min-height: 100vh;
+	text-align: center;
+}
+
+
+.icons img
+{
+	height: 1rem;
+	background-color: transparent;
+	padding:.5rem;
+	border-radius: 50%;
+	box-shadow:hsl(223, 87%, 63%) 0 0 .5rem;
+	
+	margin:0 .5rem; 
+	filter: invert(45%) sepia(46%) saturate(1088%) 
+	hue-rotate(191deg) brightness(97%) contrast(97%);
+}
+
+.icons img:hover
+{
+	
+	filter: initial;
+	background-color:hsl(223, 87%, 63%)  ;
+	box-shadow:hsl(223, 100%, 88%) 0 0 .8rem;
+	cursor: pointer;
+	
+
+		
+}
+
+.dashboard
+{
+	width:80%;
+}
+
+button
+{
+	padding: 1rem .5rem;
+	border-radius: 5em;
+	background-color: hsl(223, 87%, 63%);
+	font-size: 120%;
+	font-family: inherit;
+	font-weight: 600;
+	color:  white;
+	box-shadow:hsl(223, 100%, 88%) 0 0.3rem .5rem;
+	border:0;	
+	width: 15%;
+	margin-left: 5%;
+}
+
+button:hover
+{
+		background-color: hsl(223, 100%, 88%);
+		box-shadow:hsl(223, 87%, 63%) 0 0.3rem .5rem;
+		transition: .3s;
+		cursor: pointer;
+
+}
+
+input
+{
+	height: 3.5rem;
+	border-radius: 5rem;
+	padding-left:2%; 
+	width: 100%;
+	border:hsl(223, 87%, 63%) .02rem solid;
+	font-family: inherit;
+	font-weight: 600;
+	font-size: 1.1rem;
+
+}
+
+.inputerror
+{
+	width: 40%;
+}
+
+
+.inputbutton
+{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.text
+{
+	color:hsl(0, 0%, 59%);
+	font-weight: 600;
+	font-size: 2rem;
+
+
+}
+
+.text p span
+{
+	color:  hsl(209, 33%, 12%);
+	font-weight: 700;
+
+}
+
+.subscribe
+{
+	font-size: 1rem;
+	color: hsl(209, 33%, 12%);
+	font-weight: 300;
+
+}
+
+.copyright
+{
+	color: hsl(0, 0%, 59%);
+	font-size: .6rem;
+
+}
+
+
+/****************************************************
+****************************************************/
+@media (max-width: 600px)
+{
+.inputbutton
+{
+	display: grid;
+	place-items:center;
+	justify-content: normal;
+	
+}
+
+input
+{
+	width: 78%;
+	margin-bottom: .6rem;
+	height: 2.2rem;
+	font-size: .8rem;
+
+
+}
+
+.inputerror
+{
+	width: 100%;
+}
+
+
+
+
+
+button
+{
+	width: 80%;
+	margin:0; 
+	padding: .6rem .5rem;
+	font-size: 80%;
+}
+
+.text
+{
+	font-size: 1rem;
+}
+
+
+.subscribe
+{
+	font-size: .65rem;
+
+}
+
+#errortext
+{
+	font-size: .75rem;
+	margin-bottom: 1rem;
+}
+
+
+}
